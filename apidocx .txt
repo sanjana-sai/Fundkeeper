@@ -1,0 +1,79 @@
+
+authentication
+
+schema:User
+
+attributes:[username,password,email]
+
+1) api for creating a user account(register)
+
+   url:http://127.0.0.1:8000/
+
+   method=post
+
+   body={
+        username,
+        password,
+        email
+   }
+
+===========
+
+schema=expense
+
+attribute:[id,title....]
+
+1)api for listing all expenses
+
+url= http://127.0.0.1:8000/api/expenses/
+
+method=get
+
+body=nill
+
+authorization={username,password}  basic authentication
+
+
+2)api for adding expense
+
+     url: http://127.0.0.1:8000/api/expenses/
+
+     method:post
+
+     body=:{title,amount,category,priority}
+
+     authorization=basic authentication    means giving user object credentials here the credentials are username ,password
+
+3)api for fetching expense details
+
+url= http://127.0.0.1:8000/api/expenses/{id}/
+
+method=get
+
+body=nill
+
+authorization={username,password}  basic authentication
+
+4)api for updating expense detail
+
+     url= http://127.0.0.1:8000/api/expenses/{id}/
+
+method=put
+
+body=nill
+
+authorization={username,password}  basic authentication
+
+
+5)api for deleting a expense
+
+
+url= http://127.0.0.1:8000/api/expenses/{id}/
+
+method=delete
+
+body=nill
+
+authorization={username,password}  basic authentication
+
+
